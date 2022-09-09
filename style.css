@@ -3,35 +3,95 @@ body {
     margin: auto;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #1f2937;
+}
+
+/* Header and links */
+
+li, a {
+    font-size: 18px;
+    font-weight: lighter;
+    color: #e5e7eb;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    color: #e5e7eb;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+header h4 {
+    margin-right: auto;
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.nav-links li a:hover {
+    color: red;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+/* Main Hero */
+
 .hero {
     display: flex;
-    background: #1f2937;
-    color: white;
-    justify-content: space-around;
-    align-items:center;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 80px 10%;   
 }
 
-.hero h3 {
-    font-size: 24px;
-}
-
-.quote {
-    background: #e5e7eb;
-    color: #1f2937;
-    text-align: center;
-    font-size: 36px;
-    font-style: italic;
-    font-weight: lighter;
-    padding: 60px;
-}
-
-.quote h4 {
+.main {
     display: flex;
-    justify-content: flex-end;
-    padding-right: 10px;
-    font-style: normal;
-    font-size: large;
+    flex-direction: column;
+    margin-right: auto;
+    align-items:flex-start;
 }
+
+.main h1 {
+    color: #f9faf8;
+    font-weight: bolder;
+    font-size: 48px;
+    padding-bottom: 10px;
+}
+
+.main p {
+    color: #e5e7eb;
+    font-weight: lighter;
+    padding-bottom: 10px;
+}
+
+.main button {
+    background-color: #3882f6;
+    color: #f9faf8;
+     
+}
+
+img {
+    width: 350px;
+    height: auto;
+}
+
+
+/* Footer */
 
 .footer {
     display: flex;
@@ -40,5 +100,5 @@ body {
     background: #1f2937;
     color: white;
     font-size: 18px;
-    border: 1px solid red;
+    font-size: small;
 }

@@ -82,12 +82,15 @@ header h4 {
 .main button {
     background-color: #3882f6;
     color: #f9faf8;
-     
+    border-radius: 8px;
+    padding: 5px;
+    width: 100px;
 }
 
 img {
-    width: 350px;
+    width: 360px;
     height: auto;
+    margin-right: 10px;
 }
 
 
